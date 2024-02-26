@@ -25,7 +25,7 @@ oauth = OAuth2Session(client=oauth_client)
 
 
 app = Dash(__name__)
-
+server = app.server
 
 x1 = []    
 y1 = []
