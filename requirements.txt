@@ -1,0 +1,6 @@
+dash
+oauthlib
+requests_oauthlib
+requests
+plotly
+dash
