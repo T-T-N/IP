@@ -6,4 +6,3 @@ plotly
 dash
 gunicorn
 numpy
-time
