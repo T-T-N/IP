@@ -136,4 +136,5 @@ def update_map(n,lines):
     return fig
 
 
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=False)
