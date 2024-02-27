@@ -6,6 +6,7 @@
 #https://plotly.com/python/scattermapbox/
 #https://medium.com/plotly/introducing-jupyterdash-811f1f57c02e
 #https://www.youtube.com/watch?v=H16dZMYmvqo
+#https://stackoverflow.com/questions/68866089/can-i-save-a-high-resolution-image-of-my-plotly-scatter-plot
 
 from oauthlib.oauth2 import BackendApplicationClient
 from requests_oauthlib import OAuth2Session
@@ -35,9 +36,17 @@ y25 = []
 x10 = []    
 y10 = []
 
-
+config = {
+  'toImageButtonOptions': {
+    'format': 'png', # one of png, svg, jpeg, webp
+    'filename': 'custom_image',
+    'height': 450,
+    'width': 1264,
+    'scale':10 # Multiply title/legend/axis/canvas sizes by this factor
+  }
+}
 app.layout = html.Div([
-    dcc.Graph(id='live-update-graph'),
+    dcc.Graph(id='live-update-graph', config=config),
     dcc.Interval(
         id='interval-component',
         interval=1000,  # Update graph every second
