@@ -5,6 +5,7 @@
 #https://www.geeksforgeeks.org/how-to-update-a-plot-on-same-figure-during-the-loop/
 #https://plotly.com/python/scattermapbox/
 #https://medium.com/plotly/introducing-jupyterdash-811f1f57c02e
+#https://www.youtube.com/watch?v=H16dZMYmvqo
 
 from oauthlib.oauth2 import BackendApplicationClient
 from requests_oauthlib import OAuth2Session
