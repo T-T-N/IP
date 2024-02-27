@@ -39,10 +39,10 @@ y10 = []
 config = {
   'toImageButtonOptions': {
     'format': 'png', # one of png, svg, jpeg, webp
-    'filename': 'custom_image',
+    'filename': 'new_plot',
     'height': 450,
     'width': 1264,
-    'scale':10 # Multiply title/legend/axis/canvas sizes by this factor
+    'scale':10 
   }
 }
 app.layout = html.Div([
