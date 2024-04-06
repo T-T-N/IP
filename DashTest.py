@@ -136,7 +136,7 @@ def update_map(n,lines):
     layout = go.Layout(
         title='PM Concentration',
         xaxis=dict(title='Time'),
-        yaxis=dict(title='μg/m^3'),
+        yaxis=dict(title='Concentration [μg/m³]'),
         showlegend=True
     )
     
